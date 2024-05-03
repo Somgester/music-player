@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.webp" alt="Audify"> Audify</li>
+            <li style="cursor: pointer;">Home</li>
+            <li style="cursor: pointer;">About</li>
+            <label class="switch">
+                <input type="checkbox" onclick="darkMode()">
+                <span class="slider round"></span>
+            </label>
+        </ul>
+    </nav>
+    <div class="playlist">
+        <button class="playlist-button" onclick="createPlayListButton()">
+            <i class="fa fa-plus"></i> Create Playlist
+        </button>
+        <button class="playlist-button add" onclick="addToPlaylist()" id="addToPlaylist">
+            <i class="fa fa-plus"></i> add to playlist
+        </button>
+        <button class="playlist-button remove" onclick="removeFromPlaylist()" id="removeFromPlaylist">
+            remove a song
+        </button>
+    </div>
+    <div id="playlistContainer" class="playl">
+        <h1>Playlist</h1>
+        <!-- Playlist items will be added here -->
+    </div>
+    <br />
+    <div class="wrapper" style="width: 100%; display: flex; margin: 0; padding: 0;">
+        <div class="container" style=" margin: 0; padding: 0; max-width: 37%;">
+            <div class="songList">
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <div class="menu-content">
+                        <ul>
+                            <a href="#" id="sort">Sort A-Z</a>
+                        </ul>
+                    </div>
+                </div>
+                <h1>Audio Track</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="0"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="1"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="2"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="3"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="5"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="7"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="8"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">songgggg</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
+                                    class="far songItemPlay fa-play-circle"></i> </span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+        <div class="listening" style="display: flex; height: 250px; margin-right: 350px; width: 100%;">
+            <img src="on.gif" alt="Listening to" id="listeningGif">
+        </div>
+    </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="on.gif" width="42px" alt="" id="gif" height="30px"
+                style="justify-content: center; align-items: center;"> <span id="masterSongName">Warriyo - Mortals [NCS
+                Release]</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>

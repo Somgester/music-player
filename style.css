@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
 body {
-    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg.avif'); */
     height: 100vh;
 }
-
 * {
     margin: 0;
     padding: 0;
 }
-
 nav {
     font-family: 'Ubuntu', sans-serif;
 }
-
 nav ul {
     display: flex;
     align-items: center;
@@ -23,23 +18,19 @@ nav ul {
     background-color: black;
     color: white;
 }
-
 nav ul li {
     padding: 0 12px;
 }
-
 .brand img {
     width: 44px;
     padding: 0 8px;
 }
-
 .brand {
     display: flex;
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
 }
-
 h1 {
     padding: 20px;
     margin: 15px;
@@ -51,7 +42,6 @@ h1 {
     transition: transform 1s ease-in-out;
     transition-delay: 2s ease;
 }
-
 h1:hover {
     transform: scale(1.1);
     background: linear-gradient(to right, #dc1a61,
@@ -61,7 +51,6 @@ h1:hover {
     transition: transform 2s ease-in-out;
     transition-delay: 2s ease;
 }
-
 .container {
     min-height: 72vh;
     font-family: 'Varela Round', sans-serif;
@@ -73,7 +62,6 @@ h1:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .bottom {
     position: sticky;
     bottom: 0;
@@ -85,25 +73,20 @@ h1:hover {
     align-items: center;
     flex-direction: column;
 }
-
 .icons {
     margin-top: 14px;
     font-size: small;
 }
-
 .icons i {
     cursor: pointer;
 }
-
 #myProgressBar {
     width: 80vw;
     cursor: pointer;
 }
-
 .songItemContainer {
     margin-top: 20px;
 }
-
 .songItem {
     height: 50px;
     display: flex;
@@ -115,32 +98,26 @@ h1:hover {
     border-radius: 34px;
     border: #cf23cf 2px solid;
 }
-
 .songItem img {
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
 }
-
 .timestamp {
     margin: 0 23px;
 }
-
 .timestamp i {
     cursor: pointer;
 }
-
 .songInfo {
     position: absolute;
     left: 10vw;
     font-family: 'Varela Round', sans-serif;
 }
-
 .songInfo img {
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
-
 .switch {
     position: absolute;
     right: 5px;
@@ -148,13 +125,11 @@ h1:hover {
     width: 60px;
     height: 34px;
 }
-
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 .slider {
     position: absolute;
     cursor: pointer;
@@ -166,7 +141,6 @@ h1:hover {
     -webkit-transition: .4s;
     transition: .4s;
 }
-
 .slider:before {
     position: absolute;
     content: "";
@@ -178,30 +152,24 @@ h1:hover {
     -webkit-transition: .4s;
     transition: .4s;
 }
-
 input:checked+.slider {
     background-image: linear-gradient(to right, grey, black);
 }
-
 input:focus+.slider {
     box-shadow: 0 0 1px grey;
     border: 2px solid grey;
 }
-
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-
 .slider.round {
     border-radius: 34px;
 }
-
 .slider.round:before {
     border-radius: 50%;
 }
-
 .playlist-button {
     display: inline-block;
     background-color: rgb(50, 136, 136);
@@ -221,20 +189,16 @@ input:checked+.slider:before {
     flex-direction: row;
     width: 160px;
 }
-
 .playlist-button:hover {
     background-color: #45a049;
 }
-
 .playlist-button i {
     margin-right: 5px;
 }
-
 .playlist {
     display: flex;
     justify-content: flex-end;
 }
-
 #playlistContainer {
     margin-top: 20px;
     border: 1px solid #ccc;
@@ -242,18 +206,15 @@ input:checked+.slider:before {
     width: 200px;
     font-family: 'Ubuntu', sans-serif;
 }
-
 #playlistContainer h1 {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 36px;
 }
-
 .parent-element {
     position: relative;
 }
-
 .playl {
     position: absolute;
     right: 0;
@@ -267,31 +228,26 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
 }
-
 .hamburger-menu {
     position: relative;
     color: green;
     margin-top: -80px;
     width: 8px;
 }
-
 .hamburger-menu:hover {
     color: #f12670;
     -webkit-transition: all 0.3s ease;
     transition: all 3s ease;
     transition-delay: 1s ease;
 }
-
 #menu-toggle {
     display: none;
 }
-
 .menu-icon {
     cursor: pointer;
     display: inline-block;
     padding: 10px;
 }
-
 .menu-content {
     display: none;
     position: absolute;
@@ -302,11 +258,9 @@ input:checked+.slider:before {
     color: white;
     width: 200px;
 }
-
 #menu-toggle:checked~.menu-content {
     display: block;
 }
-
 #gif {
     padding: 2px;
     padding-top: 20px;
@@ -314,12 +268,10 @@ input:checked+.slider:before {
     margin: 5px;
     margin-bottom: 5px;
 }
-
 #gif:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
 }
-
 .listening {
     max-width: 33%;
     display: flex;
@@ -332,25 +284,21 @@ input:checked+.slider:before {
     height: 100px;
     width: 100px;
 }
-
 #listeningGif {
     max-width: 100%;
     max-height: 100%;
 }
-
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 .listening,
 .container,
 .playlist {
     flex: 1;
     margin: 0 10px;
 }
-
 @media only screen and (max-width: 1100px) {
     body {
         background-color: black;
